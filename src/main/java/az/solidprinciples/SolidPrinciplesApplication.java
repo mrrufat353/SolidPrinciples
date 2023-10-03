@@ -25,17 +25,19 @@ public class SolidPrinciplesApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         log.info("Started");
-        JavaLicenseDto dto = new JavaLicenseDto();
-        dto.setExpiredDate(new Date());
-        dto.setCategory("Java SE");
-        dto.setDegree("Junior");
-        System.out.println(javaLicenseValidator.isValid(dto));
-
         JavaLicenseDto dto1 = new JavaLicenseDto();
         dto1.setExpiredDate(new Date());
-        dto1.setCategory("OCA");
-        dto1.setDegree("Senior");
+        dto1.setId(1229868L);
+        dto1.setCategory("Java SE");
+        dto1.setDegree("Junior");
         System.out.println(javaLicenseValidator.isValid(dto1));
+
+        JavaLicenseDto dto = new JavaLicenseDto();
+        dto.setExpiredDate(new Date());
+        dto.setId(1229867L);
+        dto.setCategory("OCA");
+        dto.setDegree("Senior");
+        System.out.println(javaLicenseValidator.isValid(dto));
 
     }
 }

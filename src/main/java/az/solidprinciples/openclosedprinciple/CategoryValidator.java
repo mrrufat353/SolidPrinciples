@@ -1,6 +1,9 @@
 package az.solidprinciples.openclosedprinciple;
 
-public class CategoryValidator implements JavaLicenseValidator {
+import org.springframework.stereotype.Component;
+
+@Component
+public class CategoryValidator implements AbstractValidator {
 
     @Override
     public boolean isValid(JavaLicenseDto dto) {

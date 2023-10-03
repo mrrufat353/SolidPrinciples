@@ -1,6 +1,9 @@
 package az.solidprinciples.openclosedprinciple;
 
-public class DegreeValidator implements JavaLicenseValidator {
+import org.springframework.stereotype.Component;
+
+@Component
+public class DegreeValidator implements AbstractValidator {
 
     @Override
     public boolean isValid(JavaLicenseDto dto) {

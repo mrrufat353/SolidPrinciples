@@ -19,6 +19,6 @@ public class JavaLicenseValidatorImpl implements JavaLicenseValidator {
             if (!valid1)
                 return false;
         }
-        return false;
+        return true;
     }
 }
